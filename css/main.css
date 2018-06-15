@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+}
+
+header {
+  background-image: url("../img/back1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.aboutMe img {
+  border-radius: 1000px;
+  height: 380px;
+  width: 380px;
+  margin: 5px auto;
+}
+
+header p {
+  font-size: 22px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 88px;
+  margin-top: 5px;
+}
+
+h2 {
+  font-size: 44px;
+}
+
+.history {
+  height: 625px;
+  background-color: #E8EBDE;
+}
+
+.education, .experience {
+  background-color: #E8EBDE;
+}
+
+.experience {
+  width: 65%;
+  float: left;
+}
+
+li {
+  list-style: circle;
+}
+
+.experience span, .education span {
+  font-weight: bold;
+}
+
+.experience p {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.education {
+  width: 35%;
+  float: left;
+}
+
+.skill {
+  display: inline-block;
+}
+
+.skill section {
+  width: 20%;
+  float: left;
+}
+
+.skill img {
+  width: 50%;
+}
+
+.experience {
+  list-style: none;
+}
+
+.project {
+  clear: both;
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding-top: 10px;
+}
+
+#contact a i{
+  width: 15%;
+  font-size: 100px;
+}
+
+h6 {
+  font-size: 18px;
+  padding-bottom: 8px;
+  margin-bottom: 5px;
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media only screen and (max-width: 596.5px) {
+
+  * {
+    font-size: .95em;
+  }
+
+  h1 {
+    font-size: 33px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .aboutMe img {
+    border-radius: 100px;
+    height: 150px;
+    width: 150px;
+    margin: 5px auto;
+  }
+
+  header p {
+    width: 90%;
+    font-size: 11px;
+  }
+
+  .experience, .education {
+    width: 100%;
+  }
+
+  #contact a i {
+    font-size: 80px;
+    width: 25%;
+  }
+}
+
+@media (min-width: 596.6px) and (max-width: 898px) {
+  * {
+    font-size: .99em;
+  }
+
+  header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .aboutMe img {
+    border-radius: 400px;
+    height: 280px;
+    width: 280px;
+    margin: 5px auto;
+  }
+
+  header p {
+    width: 90%;
+    font-size: 11px;
+  }
+
+  .experience, .education {
+    width: 100%;
+  }
+
+  #contact a i {
+    font-size: 90px;
+    width: 18%;
+  }
+
+}
