@@ -90,6 +90,16 @@ li {
   clear: both;
 }
 
+.project section {
+  width: 30%;
+  margin: 0 1%;
+  float: left;
+}
+
+.project section img {
+  width: 99%;
+}
+
 footer {
   width: 100%;
   background-color: black;
