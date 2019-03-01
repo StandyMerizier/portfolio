@@ -198,7 +198,7 @@ body {
 }
 
 .pro-name {
-    font-size: 100px;
+    font-size: 10vw;
     margin: 0;
     margin-bottom: 15px;
     font-family: 'Lato', sans-serif;
@@ -274,7 +274,7 @@ body {
 	font-weight: 400;
 
     font-size: 55px;
-    font-family: 'Milonga', cursive;
+    font-family: 'Lato', sans-serif;
 }
 
 .portfolio-item img {
@@ -381,14 +381,19 @@ body {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
-.grid .effect-zoe{
+.grid .effect-zoe {
 	position: relative;
 	float: left;
 	overflow: hidden;
 	background: #3085a3;
 	text-align: center;
 	cursor: pointer;
+	display: flex;
 }
+.grid .effect-zoe a{
+	display: flex;
+}
+
 .effect-zoe p.icon-links a i
 {
 	display: inline-block;
@@ -424,7 +429,7 @@ body {
 #services .block-heading h1 {
     color: #fff;
 
-    font-family: 'Milonga', cursive;
+    font-family: 'Lato', sans-serif;
 	font-weight: 400;
 
     font-size: 55px;
@@ -438,6 +443,7 @@ body {
 	font-family: 'Oswald', sans-serif;
 	max-width: 768px;
 	margin: 0 auto;
+	padding: 0 3%;
 
 }
 
@@ -466,7 +472,7 @@ ul.numbersList {
 }
 ul.numbersList li{
     border-right: 1px solid rgba(255, 255, 255, 0.5);
-		height: 114px;
+		height: 150px;
 }
 ul.numbersList li:last-child{
     border: none;
@@ -479,7 +485,7 @@ ul.numbersList #favoriteBook{
 	margin-bottom: 11px;
 }
 ul.numbersList span{
-    font-size: 24px;
+    font-size: 2vw;
     font-weight: 700;
 }
 .numbers-title {
@@ -487,11 +493,11 @@ ul.numbersList span{
     position: relative;
 }
 #number3 {
-	font-size: 24px;
+	font-size: 2vw;
 	font-weight: 700;
 }
 #number5 {
-	font-size: 30px;
+	font-size: 2vw;
 	font-weight: 700;
 }
 
@@ -562,7 +568,7 @@ ul.numbersList span{
 #contact .block-heading h1
 {
 	color: #fff;
-	font-family: 'Milonga', cursive;
+	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	font-size: 55px;
 }
@@ -647,7 +653,7 @@ input[type="submit"]:hover {
 
 .social-box {
     list-style-type: none;
-    padding-left: 71px;
+    padding: 0;
     margin-top: 30px;
 }
 
@@ -659,6 +665,7 @@ input[type="submit"]:hover {
 .social-box li a {
 	transition: 0.5s background linear;
 	color: #fff;
+	font-size: 10vw;
 }
 
 .github-icon {
@@ -771,6 +778,12 @@ i.fa.fa-envelope-o {
 	.element-item {
 		width: 33.33%;
 	}
+	ul.numbersList span{
+		font-size: 4vw;
+	}
+	#number3, #number5{
+		font-size: 4vw;
+	}
 }
 
 @media (max-width: 767px) {
@@ -785,11 +798,23 @@ i.fa.fa-envelope-o {
 	.copyright, .designed-by {
 		text-align: center;
 	}
+	ul.numbersList span{
+		font-size: 6vw;
+	}
+	#number3, #number5{
+		font-size: 6vw;
+	}
+	.grid figcaption{
+		display: none; 
+   }
 }
 
 @media (max-width: 500px) {
 	.contact-info {
 		padding: 30px 10px;
+	}
+	.social-box li a {
+		font-size: 20vw;
 	}
 }
 
@@ -805,5 +830,13 @@ i.fa.fa-envelope-o {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    }
+	}
+
+	.grid figcaption{
+		 display: none; 
+	}
+
+	.social-box li a {
+		font-size: 15vw;
+	}
 }
